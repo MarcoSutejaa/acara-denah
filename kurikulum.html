@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jadwal Pemaparan Kurikulum</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(180deg, #0055A4 0%, #3b8edc 100%);
+      color: white;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 1.2s ease-in-out forwards;
+      padding: 20px;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    header {
+      background: linear-gradient(90deg, #0055A4, #3b8edc);
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      border: 2px solid white;
+      object-fit: cover;
+      background: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+    }
+
+    table {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background: white;
+      color: #333;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    th {
+      background-color: #0055A4;
+      color: white;
+    }
+
+    footer {
+      background: rgba(255, 255, 255, 0.1);
+      text-align: center;
+      padding: 10px;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 20px;
+    }
+
+    a.button {
+      display: inline-block;
+      background: white;
+      color: #0055A4;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    a.button:hover {
+      background: #e0e0e0;
+    }
+
+    @media (max-width: 600px) {
+      table {
+        font-size: 0.8rem;
+      }
+      th, td {
+        padding: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/logo-mt.png" alt="Logo MTCS" class="logo left" />
+    <h1>Pemaparan Kurikulum</h1>
+    <img src="img/logo-mk.png" alt="Logo MTCS" class="logo right" />
+  </header>
+
+  <table>
+    <thead>
+      <tr>
+        <th>NO</th>
+        <th>UNIT</th>
+        <th>SESI</th>
+        <th>TEMPAT</th>
+        <th>WAKTU</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>TKK MENARA TIRZA</td>
+        <td>1</td>
+        <td rowspan="4">R. KELAS 2 MT Lt.1</td>
+        <td>09.00 - 09.30 WIB</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td>12.00 - 12.30 WIB</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>SDK MENARA TIRZA</td>
+        <td>1</td>
+        <td>09.30 - 10.00 WIB</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td>12.30 - 13.00 WIB</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>SMPK MENARA TIRZA</td>
+        <td>1</td>
+        <td rowspan="2">R. KELAS 2 MT Lt.1</td>
+        <td>10.00 - 10.30 WIB</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td>13.00 - 13.30 WIB</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>SMAK MENARA TIRZA</td>
+        <td>1</td>
+        <td rowspan="2">R. KELAS 2 MT Lt.1</td>
+        <td>10.30 - 11.00 WIB</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td>13.30 - 14.00 WIB</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>SKH MENARA KASIH</td>
+        <td>1</td>
+        <td rowspan="2">R. KELAS TK MK Lt.1</td>
+        <td>09.30 - 10.00 WIB</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td>12.30 - 13.00 WIB</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a href="index.html" class="button">Kembali ke Beranda</a>
+
+  <footer>
+    &copy; 2025 Acara Sekolah. Semua Hak Dilindungi.
+  </footer>
+</body>
+</html>

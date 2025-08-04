@@ -23,27 +23,37 @@
     }
 
     header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 15px;
+      background: linear-gradient(90deg, #0055A4, #3b8edc);
+      color: white;
+      padding: 10px;
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80px;
     }
 
     header h1 {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 1.8rem;
-      margin: 0;
+      font-size: 1.6rem;
+      text-align: center;
+      max-width: 80%;
     }
 
     .logo {
-      height: 60px;
+      height: 60px;       /* Ukuran lebih kecil */
       width: 60px;
       border-radius: 50%;
-      border: 2px solid white;
-      object-fit: cover;
+      border: 2px solid rgb(25, 3, 85);
+      object-fit: contain;
+      position: absolute;
+      top: 10px;
+    }
+    .left {
+      left: 10px;
+    }
+
+    .right {
+      right: 10px;
     }
 
     main {
@@ -53,6 +63,15 @@
       align-items: center;
       justify-content: center;
       padding: 20px;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background: white;
     }
 
     .btn-container {
@@ -93,21 +112,21 @@
 
     /* Responsive */
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.4rem;
-      }
       .logo {
-        height: 45px;
-        width: 45px;
+        height: 35px;
+        width: 35px;
+      }
+      header h1 {
+        font-size: 1.2rem;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo-mt.png" alt="Logo Kiri" class="logo mt" />
+    <img src="img/logo-mt.png" alt="Logo MTCS" class="logo left" />
     <h1>Open House Sekolah Menara Tirza dan Menara Kasih</h1>
-    <img src="logo-mk.png" alt="Logo Kanan" class="logo mk" />
+    <img src="img/logo-mk.png" alt="Logo MKSS" class="logo right" />
   </header>
 
   <main>
@@ -115,11 +134,12 @@
     <div class="btn-container">
       <a href="rundown.html">Lihat Rundown</a>
       <a href="denah.html">Lihat Denah</a>
+      <a href="kurikulum.html">Pemaparan Kurikulum</a>
     </div>
   </main>
 
   <footer>
-    &copy; 2025 Acara Sekolah. Semua Hak Dilindungi.
+    &copy; 2025 Open House MK & MT. Semua Hak Dilindungi.
   </footer>
 </body>
 </html>
