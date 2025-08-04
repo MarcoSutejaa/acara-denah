@@ -3,65 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rundown Acara</title>
+  <title>Open House </title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 2rem;
-      background-color: #f9f9f9;
-    }
-    h1 {
-      text-align: center;
-      color: #222;
-    }
-    ul {
-      max-width: 500px;
-      margin: 1rem auto;
-      padding-left: 0;
-      list-style: none;
-    }
-    li {
-      background: white;
-      margin: 0.5rem 0;
-      padding: 12px 16px;
-      border-radius: 8px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-      font-size: 1.1rem;
-      color: #333;
-    }
-    nav {
-      text-align: center;
-      margin-top: 2rem;
-    }
-    a {
-      background-color: #0066cc;
+      margin: 0;
+      background: linear-gradient(180deg, #0055A4 0%, #3b8edc 100%);
       color: white;
-      padding: 10px 24px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 1.2s ease-in-out forwards;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+      position: relative;
+    }
+
+    header h1 {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    .logo {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      border: 2px solid white;
+      object-fit: cover;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 250px;
+      margin-top: 30px;
+    }
+
+    a {
+      background: white;
+      color: #0055A4;
+      padding: 14px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      font-size: 1.1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
     a:hover {
-      background-color: #004a99;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      background: rgba(255, 255, 255, 0.1);
+      text-align: center;
+      padding: 10px;
+      color: white;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+      .logo {
+        height: 45px;
+        width: 45px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Rundown Acara</h1>
-  <ul>
-    <li>08.00-14.00 Registrasi dan pemberian kupon doorprize</li>
-    <li>08.00-14.00 Photobooth</li>
-    <li>08.00-08.30 Pembukaan</li>
-    <li>08.30-11.00 Penampilan murid MK-TK-SD, guru</li>
-    <li>08.00-09.30 School Tour MK, TK & SD</li>
-    <li>09.30-10.30 Kurikulum</li>
-    <li>08.00-14.00 Bazar SMP dan Pameran SMA</li>
-    <li>08.00-10.00 Games dan belajar bersama</li>
-    <li>10.30-11.00 Doorprize dan Penutupan</li>
-  </ul>
-  <nav>
-    <a href="denah.html">Lihat Denah Acara</a>
-  </nav>
+  <header>
+    <img src="logo-mt.png" alt="Logo Kiri" class="logo mt" />
+    <h1>Open House Sekolah Menara Tirza dan Menara Kasih</h1>
+    <img src="logo-mk.png" alt="Logo Kanan" class="logo mk" />
+  </header>
+
+  <main>
+    <p></p>
+    <div class="btn-container">
+      <a href="rundown.html">Lihat Rundown</a>
+      <a href="denah.html">Lihat Denah</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Acara Sekolah. Semua Hak Dilindungi.
+  </footer>
 </body>
 </html>
